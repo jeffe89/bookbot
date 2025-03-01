@@ -1,5 +1,7 @@
 # BookBot
 
+BookBot is my first [Boot.dev](https://www.boot.dev) project!
+
 BookBot is a simple Python script that analyzes the content of a book, counting the number of words and the frequency of each character. The program then generates a report displaying these statistics in a sorted manner.
 
 ## Features
