@@ -1,7 +1,16 @@
+from stats import get_num_words
+import sys
+
 #main function
 def main():
+
+    #Check if sys.argv doesnt have two entries
+    if len(sys.argv) != 2:
+        print ("Usage: python3 main.py <path_to_book>")
+        sys.exit(1)
+
     #set path to particular book in directory
-    book_path = "books/frankenstein.txt"
+    book_path = sys.argv[1]
 
     #Opens and returns text of book as string
     text = get_book_text(book_path)
@@ -14,12 +23,6 @@ def main():
 
     #print sorted report showing character count in descending order
     print_report(chars_dict, book_path, text, num_words)
-
-#Function to take full text and split into a list of words.
-#Returns the count (length) of this list
-def get_num_words(text):
-    words = text.split()
-    return len(words)
 
 #Opens the file provided via parameter and returns text as string
 def get_book_text(path):
