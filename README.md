@@ -54,7 +54,3 @@ Geoffrey Giordano
 
 ## License
 This project is open-source and free to use.
-
-## Customization
-- To analyze a different book, modify `book_path` in the `main()` function.
-- To include additional statistics, update `print_report()`.
