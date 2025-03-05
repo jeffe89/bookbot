@@ -19,7 +19,7 @@ BookBot is a simple Python script that analyzes the content of a book, counting 
 2. Ensure that the `books/` directory contains the book file you want to analyze.
 3. Run the script using Python:
    ```sh
-   python bookbot.py
+   python3 main.py books/frankenstein.txt
    ```
 
 ## How It Works
@@ -48,14 +48,13 @@ The 't' character was found 4500 times
 
 --- End report ---
 ```
+## Author
 
-## Customization
-- To analyze a different book, modify `book_path` in the `main()` function.
-- To include additional statistics, update `print_report()`.
+Geoffrey Giordano
 
 ## License
 This project is open-source and free to use.
 
-## Author
-Geoffrey Giordano
-
+## Customization
+- To analyze a different book, modify `book_path` in the `main()` function.
+- To include additional statistics, update `print_report()`.
